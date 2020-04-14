@@ -1,0 +1,34 @@
+textarea{
+    border: 1px solid gray;
+    overflow-y: hidden;
+    text-align: justify;
+}
+
+table{
+    width: 300px;
+    border: 1.5px dotted #000;
+}
+
+
+th, td{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(odd){
+    background-color: black;
+    color: blanchedalmond;
+}
+
+tr:nth-child(even){
+    background-color: gray;
+    color: blanchedalmond;
+}
+
+ul{
+    border: 0.5px solid gray;
+    width: 300px;
+    background-color: grey;
+    margin: auto;
+}

@@ -1,0 +1,47 @@
+#purple{
+    color: purple;
+}
+
+.red{
+    font-style: italic;
+    color: red
+}
+
+.blue{
+    color: blue;
+}
+
+.green{
+    color: chartreuse;
+}
+
+body{
+    background-color: darkgoldenrod;
+}
+
+span{
+    display: block;
+}
+
+li{
+    display: inline;
+}
+
+section{
+    background-color: antiquewhite;
+}
+
+footer{
+    background-color: blue;
+}
+
+div{
+    
+    background-color: red;
+}
+
+img{
+    max-width: 100%;
+    float: left;
+}
+

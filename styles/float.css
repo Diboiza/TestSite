@@ -1,0 +1,24 @@
+img{
+    max-width: 100%;
+    float: left;
+}
+
+.myClass2 img{
+    max-width: 100%;
+    float: right;
+    
+}
+
+.container div{
+    border: 1px solid red;
+    width: 100px;
+    height: 70px;
+   float: left;
+}
+
+.box4{
+    border: 1px solid black;
+    width: 100px;
+    height: 70px;
+    clear: both;
+}

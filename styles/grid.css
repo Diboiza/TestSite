@@ -1,0 +1,34 @@
+
+
+header div img{
+    text-align: center;
+}
+
+nav{
+    background-color: teal;
+    
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+li{
+    
+    display: inline;
+    
+}
+
+a{
+    text-decoration: none;
+    color: thistle;
+}
+
+section{
+    display: inline;
+}
+
+img{
+   width: 33%;
+}

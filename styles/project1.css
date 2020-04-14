@@ -1,0 +1,108 @@
+body{
+    background-color: mediumaquamarine;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+
+}
+.wrapper{
+    width: 80%;
+    margin: 10%;
+}
+
+.logo img, .logo h2, .logo h3{
+    display: inline-block;
+}
+
+.logo img{
+    max-width: 50px;
+    max-height: 50px;
+    border: 1px solid black;
+    box-shadow: 3px 3px black;
+}
+
+.logo h2{
+    text-transform: uppercase;
+    padding-left: 5px;
+    color: black;
+}
+
+.logo h3{
+    color: #333;
+    padding-left: 5px;
+}
+
+nav{
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    background-color: black;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.5em;
+    border-bottom: 1px dotted rebeccapurple;
+    color: white;
+}
+
+nav a:hover{
+    color: royalblue;
+    border-bottom: 2px solid blueviolet;
+}
+
+.banner{
+    background: url('../img/header-logo.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+}
+
+#bannerText{
+    color: black;
+}
+
+section article, section aside{
+    display: inline-block;
+}
+
+section article{
+    float: left;
+    width: 66%;
+    margin: 0;
+}
+
+section aside{
+    float: right;
+    width: 34;
+    margin: 0;
+}
+
+footer{
+    clear: both;
+    background: #ddd;
+}
+
+footer div{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0%;
+}
+
+footer a{
+    text-decoration: none;
+}

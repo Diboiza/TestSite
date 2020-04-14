@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+       <meta name="viewport" content="width=device-width"/>
+       <title>Cern</title>
+       <Style>
+       table, th, td {
+        border: 1px solid black;
+        }
+        </Style>
+    </head>
+
+    <body>
+        <header>
+            <h1>http://info.cern.ch Home of the first website</h1>
+        </header>
+
+        <section>
+            <article>
+                <dl>
+                    <dt>From here you can:</dt><br>
+                    <li><a href="#Browse The First WebSite">Browse The First WebSite</li>
+                    <li><a href="#Browse The First WebSite using line mode browser emulator">Browse The First WebSite using line mode browser emulator</li>
+                    <li><a href="#Learn about the birth of the web">Learn about the birth of thr web</a></li> 
+                    <li><a href="#Learn about CERN, the physics laboratory where the web was born">Learn about CERN, the physics laboratory where the web was born</a></li>
+                </dl>
+            </article>
+        </section>
+
+        <section>
+            <ul>
+                <li>HTML Website</li>
+                <li>TAG Structure</li>
+                    <ul>
+                        <li>
+                            <h2>My Website</h2>
+                            <ol>
+                                <li>DOCTYPE</li>
+                                <li>HTML</li>
+                                <li>HEAD</li>
+                                <ol>
+                                    <li>H1</li>
+                                    <li>Paragraph</li>
+                                </ol>
+                            </ol>
+                        </li>
+                    </ul>
+            </ul>
+        </section>
+
+        <section>
+            <table style="width:50%">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+                <tr>
+                    <td>Bongani</td>
+                    <td>Maphiri</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <br>
+        <section>
+            <form action="newpage.html">
+                <label for="support">Support Type</label>
+                <select id="support" name="support">
+                    <option>Billing</option>
+                    <option>Technical</option>
+                    <option>Sales</option>
+                    <option>Other</option>
+                </select><br>
+                <label for="Name">Name</label><br>
+                <input type="text" name="Name"><br>
+                
+                <label for="Surname">Surname</label><br>
+                <input type="text" name="Surname"><br>
+                
+                <label for="email">Email</label><br>
+                <input type="email" name="email" required><br>
+
+                <form>
+                    <fieldset>
+                        <legend>Gender:</legend>
+                        <label for="Male">Male</label>
+                        <input type="radio" value="Male" name="gender">
+                        <label for="Female">Female</label>
+                        <input type="radio" value="Female" name="gender">
+                        <label for="Other">Other</label>
+                        <input type="radio" value="Other" name="gender"><br>
+                    </fieldset>
+                   
+                </form>
+                
+                <label for="bday">Birth Date</label><br>
+                <input type="calender" id="bday" name="bday"><br>
+
+                <label for="TCs">Do you accept our TCs</label>
+                <input type="checkbox" value="yes">
+
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="4"></textarea><br>
+                <input type="submit" name="submit">
+                
+            </form>
+            
+        </section>
+    </body>
+</html>

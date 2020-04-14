@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice File</title>
+    </head>
+
+    <body>
+        <h3>Javascript play site</h3>
+        <input id="texts" type="text">
+        <button id="btn" type="button">Click Me</button>
+        
+
+        <script>
+            var btn = document.getElementById("btn");
+            var _textName = document.getElementById("texts");
+            var header = document.querySelector('h3');
+                
+            btn.onclick = function(){
+               header.innerHTML = _textName.value;
+            }
+
+            
+            
+
+        </script>
+    </body>
+</html>
