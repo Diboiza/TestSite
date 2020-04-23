@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Json Fundamentals</title>
+    </head>
+
+    <body>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+
+
+        <script>
+            const text1 = document.getElementById('text');
+
+            const myInfo = {
+                "name": "Bongani",
+                "surname": "Maphiri",
+                "age": 16,
+                "sex": "male",
+                "address":{
+                    "streetName": '4 SekelBos Street',
+                    "Suburb": 'Mayberry Park',
+                    "City": 'Alberton',
+                    "PostalCode": 1401
+                    },
+                "Contact":{
+                    "Type": "Cell",
+                    "Number": '0786219921',
+                    "Type": 'Email',
+                    "Email": 'b.maphiri@bgb.com'
+                    }
+                }
+
+            for(i in myInfo){
+                if(i == "address"){
+                    for(i in myInfo.address ){
+                    text1.innerHTML += myInfo.address[i] + "\n"
+                    }
+                }
+                else if(i == "Contact"){
+                    for(i in myInfo.Contact){
+                    text1.innerHTML += myInfo.Contact[i] + "\n"
+                    }
+
+
+                    
+                }        
+                else{
+                    text1.innerHTML += myInfo[i] + "\n"
+                }
+            }
+
+            
+
+        </script>
+    </body>
+</html>

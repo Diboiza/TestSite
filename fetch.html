@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fetching API Data</title>
+    </head>
+
+    <body>
+        <div id="api">
+            <img id="pic" src="" alt="">
+        </div>
+
+        <script>
+            const url = "https://jsonplaceholder.typicode.com/users";
+            fetch(url
+            ).
+            then(function(Response){
+                return Response.json();
+
+            }).
+            then(function(data){
+                console.log(data[0]);
+            })
+
+            const randomUrl = "https://randomuser.me/api/?results=5";
+
+            fetch(randomUrl).
+            then(function(Response){
+                return Response.json();
+            }).
+            then(function(data){
+                console.log(data);
+                const text1 = document.getElementById('api');
+                const pic = document.getElementById('pic');
+                data.results.forEach(person => {
+                    console.log(person);
+                    text1.innerHTML += person.name.first + '\n';
+                    text1.innerHTML += "<img src='"+person.picture.medium+"'>" + '<br>';
+                });
+                })
+        </script>
+    </body>
+</html>

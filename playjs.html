@@ -6,20 +6,62 @@
 
     <body>
         <h3>Javascript play site</h3>
-        <input id="texts" type="text">
-        <button id="btn" type="button">Click Me</button>
-        
+        <input id="texts" type="text"><br>
+        <button id="btn1" type="button">Button 1</button>
+        <button id="btn2" type="button">Button 2</button>
+        <button id="btn3" type="button">Button3</button>
+        <h2></h2>
+        <h1 id="else"></h1>
 
         <script>
-            var btn = document.getElementById("btn");
+            var btn1 = document.getElementById("btn1");
+            var btn2 = document.getElementById("btn2");
+            var btn3 = document.getElementById("btn3");
             var _textName = document.getElementById("texts");
-            var header = document.querySelector('h3');
+            var header = document.querySelector('h2');
+
+            var a, b, c;
+
+            a = b = c = 0;
                 
-            btn.onclick = function(){
-               header.innerHTML = _textName.value;
+            btn1.onclick = function(){
+               a++;
+               msg();
+            }
+            
+            btn2.onclick = function(){
+               b++;
+                msg();
             }
 
             
+
+            function msg(){
+                header.innerHTML = c + ' ' + b + ' ' + a ;
+            }
+
+            var Audi = {};
+
+            Audi.owner = 'Bongani'
+            Audi.model = 'A3 Sportback';
+            Audi.Year = 2020;
+            Audi.color = 'Red';
+            Audi.slogan = function(){
+                console.log("Hello", this.owner, "welcome to your:" + this.model);
+            }
+
+            function carDetail(){
+                document.querySelector('h3').innerHTML = Audi.model + ' ' + Audi.color;
+                document.querySelector('h3').style.color = Audi.color;
+            }
+                
+            btn3.onclick = function(){
+               carDetail();
+            }
+
+
+            var myArra1 = ['strength', 'conditioning', 2, false];
+
             
 
         </script>

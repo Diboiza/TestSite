@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Manipulation</title>
+    </head>
+
+    <body>
+        <h1>Non consectetur non est tempor excepteur nostrud est occaecat cillum exercitation.</h1>
+        <ul>
+            <li id="one">Tempor adipisicing excepteur tempor eiusmod cillum ad dolore dolor occaecat occaecat adipisicing magna consectetur in.</li>
+            <li class="two">Et ullamco magna minim esse excepteur voluptate eiusmod labore adipisicing commodo aute ut consequat.</li>
+            <li class="two">Aute veniam elit occaecat nisi amet sit ipsum consequat duis proident excepteur ullamco laborum esse.</li>
+        </ul>
+
+        <button type="button">Click Me</button>
+
+        <p>Aute aute esse esse enim ut consequat. Dolore eiusmod consectetur pariatur proident adipisicing ipsum dolore. Est ipsum quis nostrud aliqua et laborum. Sunt veniam anim mollit aliquip nulla duis eu sit velit nulla in proident.</p>
+        <ul>
+            <li class="two">Tempor adipisicing excepteur tempor eiusmod cillum ad dolore dolor occaecat occaecat adipisicing magna consectetur in.</li>
+            <li class="two">Et ullamco magna minim esse excepteur voluptate eiusmod labore adipisicing commodo aute ut consequat.</li>
+            <li class="two">Aute veniam elit occaecat nisi amet sit ipsum consequat duis proident excepteur ullamco laborum esse.</li>
+        </ul>
+
+        <a href="https://via.placeholder.com/350/00000F" target="_blank"><img src="https://via.placeholder.com/150/FF00FF" alt=""></a>
+        <img src="https://via.placeholder.com/350/0000FF" alt="">
+
+        <script>
+            const el1 = document.querySelector('h1');
+            el1.innerHTML = "Hello World";
+            el1.style.color = 'blue';
+            el1.style.background = 'red';
+            // el1.innerText = 'TEST';
+
+            const list1 = document.querySelectorAll('li');
+
+            list1[0].onmouseover = function(){
+                list1[0].innerText ="hello";
+                list1[2].style.background = "red";
+            }
+
+            const btn = document.querySelector('button');
+            
+            btn.onmousedown = function(){
+                list1[3].style.font = "25px";
+                list1[3].style.color = "blue";
+            }
+
+            btn.addEventListener("mouseup",
+            
+            function(){
+                list1[4].textContent = "You released the mouse";
+                list1[4].style.border = "3px solid gray";
+            }) 
+
+            const anc = document.querySelector('a');
+            const image = document.querySelectorAll('img');
+
+            const imgLink = anc.firstElementChild.getAttribute('src');
+            const imgLink2 = image[1].getAttribute('src');
+            image[1].setAttribute('src', imgLink);
+            anc.firstElementChild.setAttribute('src',imgLink2);
+
+
+
+        </script>
+    </body>
+</html>

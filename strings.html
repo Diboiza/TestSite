@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <title>loops n strings</title>
+    <body>
+        <h2>Exercise</h2>
+        <div id="output"></div>
+        <input type="number" name="myNum" min="0" max="100" value="4">
+        <input type="button" id="testBtn" value="check">
+
+        <script>
+          const output = document.getElementById('output');
+          const testBtn = document.getElementById('testBtn');
+          testBtn.addEventListener('click', checkVal);
+
+          function checkVal()
+          {
+              let val = document.querySelector('input[name="myNum"]').value;
+              output.innerHTML = numCheck(val);
+          }
+
+          function numCheck(num)
+          {
+              let message;
+
+              if(num % 2){
+                    message = "Odd number";
+              }
+              else{
+                  message = "Even number";
+              }
+
+              return message;
+          }
+          
+
+
+
+        </script>
+    </body>
+</html>

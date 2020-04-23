@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Json Storage</title>
+    </head>
+
+    <body>
+        <h3>Json Methods and Storage Methods</h3>
+        <textarea name="area" id="area" cols="30" rows="10"></textarea>
+
+        <script>
+            const names = {
+                    "name": "Bongani",
+                    "surname": "Ndlovu",
+                    "Gender": "Male"
+            }
+
+            const stringy = JSON.stringify(names);
+             localStorage.setItem("names", stringy);
+            const retrieve = localStorage.getItem('names');
+            const obj2 = JSON.parse(retrieve);
+            obj2['dob'] = 1990;
+            
+            text1 = document.getElementById('area');
+
+            for(i in obj2){
+                text1.innerHTML += obj2[i] + '\n';
+            }
+        </script>
+    </body>
+</html>
